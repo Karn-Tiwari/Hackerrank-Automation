@@ -84,7 +84,7 @@ function questionSolver(page,question,answer)//kis page pe hai konsa question ha
             let ctrlIsPressed = page.keyboard.down('Control')
             return ctrlIsPressed;
          }).then(function(){
-            let AIsPressed = page.keyboard.press('A',{delay:100})
+            let AIsPressed = page.keyboard.press('A',{delay:100})// select all from text area
             return AIsPressed;
          }).then(function(){
             let XIsPressed = page.keyboard.press('X',{delay:100})
