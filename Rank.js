@@ -87,13 +87,13 @@ function questionSolver(page,question,answer)//kis page pe hai konsa question ha
             let AIsPressed = page.keyboard.press('A',{delay:100})// select all from text area
             return AIsPressed;
          }).then(function(){
-            let XIsPressed = page.keyboard.press('X',{delay:100})
+            let XIsPressed = page.keyboard.press('X',{delay:100})// all cut from text area
             return XIsPressed;
          }).then(function(){
-            let ctrlIsUnPressed = page.keyboard.up('Control')
+            let ctrlIsUnPressed = page.keyboard.up('Control')//control key ko dabaye rakna hai
             return ctrlIsUnPressed;
          }).then(function(){
-            let mainEditorInFocus = waitAndClick('.monaco-editor.no-user-select.vs',page)
+            let mainEditorInFocus = waitAndClick('.monaco-editor.no-user-select.vs',page)//aur main editor me ake past karna hai
             return mainEditorInFocus;
          }).then(function(){
             ctrlIsPressed = page.keyboard.down('Control')
