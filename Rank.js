@@ -108,7 +108,7 @@ function questionSolver(page,question,answer)//kis page pe hai konsa question ha
             let ctrlIsUnPressed = page.keyboard.up('Control')
             return ctrlIsUnPressed;
          }).then(function(){
-            return page.click('.hr-monaco__run-code',{delay:100})
+            return page.click('.hr-monaco__run-code',{delay:100})// submit button ko select karna 
         }).then(function(){
             resolve()
         }).catch(function(err){
