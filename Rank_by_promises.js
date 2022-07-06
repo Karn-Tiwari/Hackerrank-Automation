@@ -6,7 +6,7 @@ const loginLink = 'https://www.hackerrank.com/auth/login';
 const email = 'davidshout0111@gmail.com';
 const password = 'David12345';
 
-let browserOpen = puppeteer.launch({// puppeteer initialize hota hai iss launch function se
+let browserOpen = puppeteer.launch({// puppeteer initialize hota hai iss launch function kiya jata hai
 
     headless:false, // iski wajah se visible hone lagega
     args: ['--start-maximized'],
